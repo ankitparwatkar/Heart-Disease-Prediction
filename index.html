@@ -1,0 +1,118 @@
+<html>
+
+<head>
+
+<title>Heart Disease Prediction</title>
+
+<style>
+
+body{
+background-image: url("../static/116316-abstract-cyan-defocused-background-design.jpg");
+Background-size: cover;
+}
+
+form{
+text-align: center
+}
+
+input{
+width: 25%
+}
+
+input[type=submit]{
+	background-color: green;
+	color: white;
+	height: 5vh;
+	width: 12%
+}
+
+label {
+	font-size: 20px;
+	display: inline_block;
+	width: 150px;
+	text-align: right;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<center><h1>Heart Disease Prediction</h1></center>
+
+<form action='/predict' method="POST">
+
+<label for = "age">Age</label>
+<input type = 'number', name = 'age', required = 'required'>
+
+<br></br>
+
+<label for = "sex">Sex</label>
+<input type = 'number', name = 'sex', required = 'required'>
+
+<br></br>
+
+<label for = "cp">CP</label>
+<input type = 'number', name = 'cp', required = 'required'>
+
+<br></br>
+
+<label for = "trestbps">TrestBPS</label>
+<input type = 'number', name = 'trestbps', required = 'required'>
+
+<br></br>
+
+<label for = "chol">Chol</label>
+<input type = 'number', name = 'chol', required = 'required'>
+
+<br></br>
+
+<label for = "fbs">FBS</label>
+<input type = 'number', name = 'fbs', required = 'required'>
+
+<br></br>
+
+<label for = "restecg">RestECG</label>
+<input type = 'number', name = 'restecg', required = 'required'>
+
+<br></br>
+
+<label for = "thalach">Thalach</label>
+<input type = 'number', name = 'thalach', required = 'required'>
+
+<br></br>
+
+<label for = "exang">Exang</label>
+<input type = 'number', name = 'exang', required = 'required'>
+
+<br></br>
+
+<label for = "oldpeak">Oldpeak</label>
+<input type = 'number', name = 'oldpeak', required = 'required'>
+
+<br></br>
+
+<label for = "slope">Slope</label>
+<input type = 'number', name = 'slope', required = 'required'>
+
+<br></br>
+
+<label for = "ca">CA</label>
+<input type = 'number', name = 'ca', required = 'required'>
+
+<br></br>
+
+<label for = "thal">Thal</label>
+<input type = 'number', name = 'thal', required = 'required'>
+
+<br><br>
+
+<label></label>
+<input id = "submit" type = "submit" value = "Give Recommendations" ></input>
+
+</form>
+<center><h2>{Result}</h2></center>
+</body>
+
+</html>
